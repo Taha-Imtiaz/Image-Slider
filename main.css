@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body
+{
+   
+    overflow-x: hidden
+}
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display:grid; 
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 1fr 500px 1fr;
+    grid-template-areas: ". . ."
+                        ". slider ."
+                        "footer footer footer";
+    background: lightsteelblue;
+}
+.slider
+{
+    grid-area: slider;
+    background: lightsalmon;
+    border: 3px solid black;
+    overflow: hidden;
+}
+.slide
+{
+    display: flex
+}
+.footer
+{
+    grid-area: footer;
+    background: limegreen
+}
+.footer .btn
+{
+font-size: 20px;
+padding: 6px 12px;
+border: 2px solid black;
+margin: 10px;
+cursor: pointer;
+}
